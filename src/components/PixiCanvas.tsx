@@ -8,6 +8,7 @@ const PixiCanvas = () => {
 
   useEffect(() => {
     let isMounted = true;
+    let resize: () => void;
 
     const setupPixi = async () => {
       if (!containerRef.current) return;
@@ -16,20 +17,37 @@ const PixiCanvas = () => {
       await app.init();
 
       if (!isMounted) {
+        if (resize) {
+          window.removeEventListener("resize", resize);
+        }
         app.destroy(true, { children: true });
         return;
       }
 
       appRef.current = app;
       containerRef.current.appendChild(app.canvas);
+
+      resize = () => app.handleResize();
+      window.addEventListener("resize", resize);
     };
 
     setupPixi();
 
     return () => {
       isMounted = false;
+      if (resize) {
+        window.removeEventListener("resize", resize);
+      }
       appRef.current?.unmount();
-      appRef.current?.destroy(true, { children: true });
+      appRef.current?.destroy(
+        { removeView: true },
+        {
+          children: true,
+          texture: true,
+          textureSource: false,
+          context: true,
+        }
+      );
     };
   }, []);
 
@@ -37,9 +55,9 @@ const PixiCanvas = () => {
 };
 
 const GameContainer = styled.div`
-  position: relative;
-  width: "100%";
-  height: "100%";
+  position: absolute;
+  width: 100%;
+  height: 100%;
 `;
 
 export default PixiCanvas;

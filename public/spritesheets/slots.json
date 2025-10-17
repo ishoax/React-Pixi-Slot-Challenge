@@ -1,0 +1,92 @@
+{"frames": {
+
+"Apple_96x96":
+{
+	"frame": {"x":78,"y":123,"w":67,"h":72},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":11,"w":67,"h":72},
+	"sourceSize": {"w":96,"h":96}
+},
+"Banana_96x96":
+{
+	"frame": {"x":153,"y":123,"w":79,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":14,"w":79,"h":68},
+	"sourceSize": {"w":96,"h":96}
+},
+"Cherry_96x96":
+{
+	"frame": {"x":2,"y":50,"w":65,"h":58},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":19,"w":65,"h":58},
+	"sourceSize": {"w":96,"h":96}
+},
+"Green_Grape_96x96":
+{
+	"frame": {"x":131,"y":2,"w":57,"h":55},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":21,"w":57,"h":55},
+	"sourceSize": {"w":96,"h":96}
+},
+"Lemon_96x96":
+{
+	"frame": {"x":191,"y":2,"w":55,"h":63},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":18,"w":55,"h":63},
+	"sourceSize": {"w":96,"h":96}
+},
+"Lime_96x96":
+{
+	"frame": {"x":65,"y":2,"w":63,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":24,"w":63,"h":54},
+	"sourceSize": {"w":96,"h":96}
+},
+"Orange_96x96":
+{
+	"frame": {"x":63,"y":60,"w":60,"h":72},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":12,"w":60,"h":72},
+	"sourceSize": {"w":96,"h":96}
+},
+"Plum_96x96":
+{
+	"frame": {"x":138,"y":60,"w":60,"h":68},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":13,"w":60,"h":68},
+	"sourceSize": {"w":96,"h":96}
+},
+"StrawBerry_96x96":
+{
+	"frame": {"x":2,"y":2,"w":45,"h":60},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":17,"w":45,"h":60},
+	"sourceSize": {"w":96,"h":96}
+},
+"Watermelon_96x96":
+{
+	"frame": {"x":2,"y":123,"w":73,"h":65},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":14,"w":73,"h":65},
+	"sourceSize": {"w":96,"h":96}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "slots.png",
+	"format": "RGBA8888",
+	"size": {"w":256,"h":193},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0659bbcaff51f481a2c7a8acb7f6be88:da5c1483c2b624182eb4674502507c06:81982ae4a4bbbbbd62107d53ee327a43$"
+}
+}
